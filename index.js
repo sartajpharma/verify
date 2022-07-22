@@ -44,7 +44,7 @@ app.get("/harshit", async (req, res) => {
 
 })
 
-app.get('/', async (req, res) => {
+app.get('/verify', async (req, res) => {
     const id = req.query.id
     const product = await Products.findById(id)
     res.render('main', { product })
