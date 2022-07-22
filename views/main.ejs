@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+	
+
   </head>
   <body>
     <nav class="navbar bg-light">
@@ -34,12 +36,12 @@
           />
         </a>
 
-        <button
+        <a
           class="btn btn-outline-success"
           href="https://www.sartajpharma.com"
         >
           Go To Home
-        </button>
+        </a>
       </div>
     </nav>
     <div
@@ -55,7 +57,7 @@
       <div
         class="card-body"
         style="
-          width: 50%;
+          width: 80%;
           display: flex !important;
           flex-direction: column;
           align-items: center !important;
@@ -68,24 +70,22 @@
       <ul
         class="list-group list-group-flush"
         style="
-          width: 50%;
+          width: 80%;
           display: flex !important;
           flex-direction: column;
           align-items: center !important;
           justify-content: center !important;
         "
       >
-        <li class="list-group-item">BATCH:<%=product.batch.toUpperCase()%></li>
-        <li class="list-group-item">
-          EXPIRY:<%=product.exp.toISOString().split('T')[0]%>
+        <li class="list-group-item" style="text-align:center;width:80%;">BATCH:<p><%=product.batch.toUpperCase()%></p></li>
+        <li class="list-group-item" style="text-align:center;width:80%;">
+          EXP.:<p><%=product.exp.toISOString().split('T')[0]%></p>
         </li>
-        <li class="list-group-item">
-          MANIFACTURING:<%=product.mfg.toISOString().split('T')[0]%>
+        <li class="list-group-item" style="text-align:center;width:80%;">
+         MFG.:<p><%=product.mfg.toISOString().split('T')[0]%></p>
         </li>
       </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">VIEW PRODUCT</a>
-      </div>
+      
     </div>
 
     <script
