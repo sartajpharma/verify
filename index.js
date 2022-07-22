@@ -52,6 +52,10 @@ app.get('/verify', async (req, res) => {
 })
 
 
+app.get('/', (req, res) => {
+    res.send("hello")
+})
+
 app.listen(port, () => {
     mongoose.connect('mongodb+srv://harshitjindal:foAaW8FWX9i7MDVP@sartajpharma.7bximvl.mongodb.net/?retryWrites=true&w=majority'),
         console.log('express app')
