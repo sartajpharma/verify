@@ -7,7 +7,7 @@ const Products = require('./model/product')
 const express = require('express')
 
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 const app = express()
 
